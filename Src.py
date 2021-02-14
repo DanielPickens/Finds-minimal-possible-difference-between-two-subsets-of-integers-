@@ -5,7 +5,7 @@
 
 import itertools
 
-arr = [4, 9, 1, 32, 13]
+arr = [3,7,2,5]
 
 if len(arr) > 1:
     min_diff = abs(arr[0] - arr[1])
