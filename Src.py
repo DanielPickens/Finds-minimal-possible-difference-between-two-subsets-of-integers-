@@ -1,6 +1,47 @@
 ## my code solves the equation. 
 
-# solution: 
+          
+         ######### best: solution all around: 
+          
+          def findMinReq(arr, i, sumCalculated, 
+        sumTotal):
+  if (i == 0):
+    return abs((sumTotal - sumCalculated) -
+          sumCalculated)
+  return min(findMinReq(arr, i - 1, 
+             sumCalculated+arr[i - 1], 
+             sumTotal),
+        findMinReq(arr, i - 1, 
+             sumCalculated, sumTotal))
+
+def findMin(arr, nbdy):
+  sumTotal = 0
+  for i in range(nbdy):
+    sumTotal += arr[i]
+ 
+  return findMinReq(arr, nbdy, 
+           0, sumTotal)
+            
+if __name__ == "__main__":
+ 
+  arr = [3, 7, 5, 1]
+  nbdy = len(arr)
+  print("The minimum difference " +
+     "between two sets is ", 
+      findMin(arr, nbdy))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 import itertools
