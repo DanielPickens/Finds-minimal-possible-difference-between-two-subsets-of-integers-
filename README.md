@@ -1,5 +1,5 @@
 # Finds-minimal-possible-difference-between-two-subsets-of-integers-
-My program code that solves this algo:
+My code that solves this algo:
 
 
 Given an array of positive integers, divide it into two sets such that the absolute difference between their sums is smallest.
